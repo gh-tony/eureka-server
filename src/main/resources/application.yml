@@ -1,0 +1,11 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: vm140275
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://vm140276:8761/eureka/
